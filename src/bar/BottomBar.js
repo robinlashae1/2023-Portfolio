@@ -1,7 +1,14 @@
 function BottomBar() {
     return ( 
-        <div className="border-bars botttom">
-            Bottom
+        <div className="border-bars bottom">
+            <div id="bottom-text">
+                <h3>Let's Connect</h3>
+                <p>If you have any questions or would like to chat, feel free to reach out! I'd love to chat or collaborate.</p>
+            </div>
+            <div>
+                <h3> Contact Me</h3>
+                <p>Icons</p>
+            </div>
         </div>
     );
 }

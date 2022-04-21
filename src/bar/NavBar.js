@@ -3,19 +3,19 @@ import {NavLink} from "react-router-dom";
 function NavBar() {
     return ( 
         <div className="border-bars top">
-            <NavLink to="/" exact style={NavStyles}>
+            <NavLink className="nav-link" to="/" exact style={NavStyles}>
                 Home
             </NavLink>
-            <NavLink to="/about" exact style={NavStyles}>
+            <NavLink className="nav-link" to="/about" exact style={NavStyles}>
                 About
             </NavLink>
-            <NavLink to="/skills" exact style={NavStyles}>
+            <NavLink className="nav-link" to="/skills" exact style={NavStyles}>
                 Skills
             </NavLink>
-            <NavLink to="/myProjects" exact style={NavStyles}>
+            <NavLink className="nav-link" to="/myProjects" exact style={NavStyles}>
                 Projects
             </NavLink>
-            <NavLink to="/blogs" exact style={NavStyles}>
+            <NavLink to="/blogs" className="nav-link" id="last-nav-padding" exact style={NavStyles}>
                 Blogs
             </NavLink>
         </div>
@@ -25,5 +25,12 @@ function NavBar() {
 export default NavBar;
 const NavStyles =
 {
-border: "1px black solid"
+border: "1px black solid",
+display: "inline-block",
+      width: "7vw",
+      height: "fit-content",
+      padding: "12px",
+      margin: "-10px 6px 12px",
+      textDecoration:"none",
+      color: "black"
 }

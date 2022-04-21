@@ -1,3 +1,4 @@
+import { StrictMode } from 'react';
 import HomePage from './pages/Home';
 import About from "./pages/About"
 import Blog from "./pages/Blog"
@@ -5,35 +6,25 @@ import Project from "./pages/Project"
 import Skills from './pages/Skills';
 import BottomBar from './bar/BottomBar';
 import NavBar from './bar/NavBar';
-import { Route, Switch, BrowserRouter} from "react-router-dom";
+import { Route, Routes, BrowserRouter} from "react-router-dom";
 import './styling/App.css';
 
 function App() {
   return (
     <div className="App">
+      <StrictMode>
       <BrowserRouter>
       <NavBar/>
-      <Switch>
-        <Route exact route="/">
-          <HomePage />
-        </Route>
-        <Route exact Route="/about">
-          <About />
-        </Route>
-        <Route exact route="/blogs">
-          <Blog />
-        </Route>
-        <Route exact route="/myProjects">
-          <Project />
-        </Route>
-        <Route exact route="/skills">
-          <Skills />
-        </Route>
-        
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/blogs" element={<Blog />} />
+        <Route exact path="/myProjects" element={<Project />} />
+        <Route exact path="/skills" element={<Skills />} />
+      </Routes>
       <BottomBar />
       </BrowserRouter>
-      
+      </StrictMode>
     </div>
   );
 }
