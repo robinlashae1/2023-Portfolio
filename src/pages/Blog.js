@@ -28,6 +28,7 @@ function Blog() {
 }
 
 export default Blog;
+
 const Blogs=[
     {title: "React: Componenets",
     preview: "When first learning React, a key concept you\'ll encounter are components. These are essentially building blocks for your app. They help to make your code “dry”, dynamic and are an essential ...",

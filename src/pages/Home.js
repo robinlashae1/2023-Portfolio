@@ -1,5 +1,5 @@
-
-function Home() {
+import portfolioImage from "../styling/portfolioImage.png"
+function Home({image}) {
     return ( 
         <div className="overall-container wrap">
             <div id="home-intro">
@@ -8,7 +8,7 @@ function Home() {
                 <h2>FullStack Developer</h2>
             </div>
             <div className="photo">
-                <img src="https://image.shutterstock.com/image-vector/camera-icon-photography-symbol-photo-260nw-762958630.jpg" alt="my face" />
+                <img src={image} alt="my face" />
             </div>
         </div>
     );

@@ -24,6 +24,7 @@ function Project() {
     return ( 
         <div className="overall-container wrap">
             {renderProjects(Projects)}
+            <ProjectsModal show={modalOpen} handleClose={()=> setModalOpen(false)} project={modalData}/>
         </div>
     );
 }

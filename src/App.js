@@ -8,6 +8,7 @@ import BottomBar from './bar/BottomBar';
 import NavBar from './bar/NavBar';
 import { Route, Routes, BrowserRouter} from "react-router-dom";
 import './styling/App.css';
+import portfolioImage from "./styling/portfolioImage.png"
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
       <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/about" element={<About />} />
+        <Route exact path="/" element={<HomePage image={portfolioImage}/>} />
+        <Route exact path="/about" element={<About image={portfolioImage}/>} />
         <Route exact path="/blogs" element={<Blog />} />
         <Route exact path="/myProjects" element={<Project />} />
         <Route exact path="/skills" element={<Skills />} />
