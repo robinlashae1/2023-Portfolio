@@ -135,20 +135,34 @@ margin-right: 2vw;
 }
 #blog-link{
   text-decoration: none;
+  color: inherit;
 }
 #blog-container{
-  width: 16vw;
+  width: 17vw;
   height: 23vh;
-  border: 1px black solid;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 #blog-container p{
   margin: auto;
   height: 15vh;
 }
 #blog-container h3{
-  margin: 3px 3px
+  margin: auto;
+  padding:  2% 0 0;
 }
-
+#blogImg{
+  width: 45%;
+  object-fit: contain;
+  padding: 0 3%;
+  background-color: #516678;
+  height: 100%;
+}
+.blogTitle{
+  width: 50%;
+}
 /* Skills */
 #skill-container{
   display: flex;
