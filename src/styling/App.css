@@ -7,7 +7,7 @@
   /* display: flex; */
 }
 .overall-container{
-height: 70vh;
+height: 74vh;
 
 }
 .wrap{
@@ -54,7 +54,7 @@ width: 55%;
 /* bars */
 .border-bars{
 width: 100vw;
-height: 15vh;
+height: 13vh;
 
 }
 .bottom{
@@ -69,13 +69,28 @@ justify-content: space-around;
   background-color: #a1b1ad
 }
 #bottom-text{
-  width: 50vw;
+  width: 45vw;
+  margin: 0 0 0 1vw;
+  justify-content: center;
 }
 #bottom-text h3{
   margin-top: auto;
 }
 #bottom-contact{
   right: 0;
+  display: flex;
+  width: 49%;
+  flex-direction: column;
+  justify-content: center;
+}
+.single-icons{
+  color: inherit;
+  text-decoration: none;
+  margin-right: 1vw;
+}
+.bottom-icons{
+  display: flex;
+flex-direction: row;
 }
 
 .top{
@@ -92,8 +107,8 @@ margin-right: 2vw;
 }
 
 /* Projects */
-.portfolioCard{
-
+.portfolioWork:hover{
+  background-color: #a1b1ad
 }
 .portfolioPara{
   width: auto;
@@ -110,11 +125,14 @@ margin-right: 2vw;
 }
 #portfolioImage{
   width: inherit;
-  object-fit: cover;
+  object-fit: contain;
   height: 50%
 }
 
 /* Blogs */
+.writing:hover{
+  background-color: #a1b1ad
+}
 #blog-link{
   text-decoration: none;
 }
@@ -204,3 +222,31 @@ flex-direction: row;
 #5f9595
 
  */
+ .box {
+   height: fit-content;
+   width: fit-content;
+  --b:5px;   /* thickness of the border */
+  --c:rgb(0, 0, 0);   /* color of the border */
+  --w:20px;  /* width of border */
+  
+
+  border:var(--b) solid transparent; /* space for the border */
+  --g:#0000 90deg,var(--c) 0;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--g)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--g)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--g)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--g)) 100% 100%;
+  background-size:var(--w) var(--w);
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  
+  /*Irrelevant code*/  
+  box-sizing:border-box;
+  margin:5px;
+  display:inline-flex;
+  font-size:30px;
+  justify-content:center;
+  align-items:center;
+  line-height:90px;
+}

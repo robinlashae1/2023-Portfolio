@@ -2,7 +2,7 @@
 function About({image}) {
     return (
         <div className="overall-container wrap">
-            <div>
+            <div className="box">
             {/* <div className="photo"> */}
             {/* <img src={image} alt="my face" /> */}
             <h1 id="about-me">About <br/> Me</h1>

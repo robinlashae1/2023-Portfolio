@@ -5,7 +5,7 @@ function Blog() {
         return(
             array.map(blog => 
                 <a href={blog.link} id="blog-link">
-                   <div style={{margin: "auto"}}id="blog-container">
+                   <div style={{margin: "auto"}}id="blog-container" className="writing">
                     <h3 
                     >{blog.title}</h3>
                     <p>{blog.preview}</p>
@@ -31,10 +31,10 @@ export default Blog;
 
 const Blogs=[
     {title: "React: Componenets",
-    preview: "When first learning React, a key concept you\'ll encounter are components. These are essentially building blocks for your app. They help to make your code “dry”, dynamic and are an essential ...",
+    preview: "When first learning React, a key concept you'll encounter are components. These are essentially building blocks for your app. They help to make your code “dry”, dynamic and are an essential ...",
     link: "https://dev.to/robinlashae1/react-components-e2g"},
     {title: "A Basic guide to Active Record Commands",
-    preview: "When transitioning to Ruby\'s active record, the commands can be a little long winded and tedious. Here i have provided a c...",
+    preview: "When transitioning to Ruby's active record, the commands can be a little long winded and tedious. Here i have provided a c...",
     link: "https://dev.to/robinlashae1/a-basic-guide-to-active-record-commands-doh"},
     {title: "Renaming a Rails app",
     preview: "Have you ever began a project without having a solid name picked out? I'm sure all of us have at least once. This is completely ok, we shouldn't just let inspiration fade because we can't...",

@@ -9,10 +9,10 @@ function Project() {
         return (
             array.map( project => 
 
-               <div className="portfolioWork" onClick={()=> {setModalOpen(true);setModalData(project)}}>
+               <div className="portfolioWork " onClick={()=> {setModalOpen(true);setModalData(project)}}>
                     <img id="portfolioImage" src={project.image} alt={project.imgAlt}/>
                     <div className="portfolioCard">
-                       <h1 style={{marginTop: "auto",marginBottom: "auto"}}>{project.name}</h1>
+                       <h1 style={{marginTop: "auto",marginBottom: "auto",fontSize: "inherit"}}>{project.name}</h1>
                     <p className="portfolioPara">{project.preview}</p> 
                     </div>
                     {/* <a href="https://www.loom.com/share/39033ef1ad1f44448045ad5a961385e8">Demo</a> */}
