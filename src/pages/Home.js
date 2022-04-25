@@ -1,4 +1,4 @@
-import portfolioImage from "../styling/portfolioImage.png"
+
 function Home({image}) {
     return ( 
         <div className="overall-container wrap">

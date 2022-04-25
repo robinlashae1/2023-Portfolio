@@ -20,10 +20,13 @@ function Project() {
             )
         )
     }
-    
+
     return ( 
-        <div className="overall-container wrap">
-            {renderProjects(Projects)}
+        <div className="overall-container ">
+             <h1 style={{padding: "4px 0px 2%", margin: "auto"}}>My Works</h1>
+            <div className="wrap">
+              {renderProjects(Projects)}  
+            </div>
             <ProjectsModal show={modalOpen} handleClose={()=> setModalOpen(false)} project={modalData}/>
         </div>
     );
