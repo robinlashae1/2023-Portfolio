@@ -26,10 +26,10 @@ text-align: left;
 line-height: 1vh;
 }
 #home-intro h2{
-font-size: 3em;
+font-size: 1.7em;
 }
 #home-intro h1{
-  font-size: 6em;
+  font-size: 3em;
   color: #516678;
 }
 .photo{
@@ -39,24 +39,27 @@ font-size: 3em;
   
 }
 .photo img{
-  max-height: 60vh;
+  max-height: 40vh;
    object-fit: contain; 
    border: 1px solid;
    padding: 10px;
-   box-shadow: 30px 30px #51667891
+   box-shadow: 15px 15px #51667891
 
 }
 
 /* about */
 
 #about-text{
-width: 55%;
+width: 90%;
+}
+.inital{
+
 }
 #about-text p{
   font-size: 1.3em;
 }
 #about-me{
-  font-size: 8vw;
+  /* font-size: 8vw; */
   line-height: 15vh;
   text-align: left;
 }
@@ -129,7 +132,9 @@ margin-right: 2vw;
   height: auto;
 }
 .portfolioWork{
-  width: 16vw;
+  min-width: 220px;
+  width: 60%;
+  margin-bottom: 2vh;
   height: 34vh;
   border: 1px black solid;
   padding: 1vw 1vh
@@ -147,11 +152,12 @@ margin-right: 2vw;
 #blog-link{
   text-decoration: none;
   color: inherit;
+  margin-bottom: 2%;
 }
 #blog-container{
-  max-width: 17vw;
-  min-width: 10vw;
-  height: 23vh;
+  min-width: 17vw;
+  width: 400px;
+  height: 20vh;
   border-radius: 25px;
   display: flex;
   flex-direction: row;
@@ -168,7 +174,7 @@ margin-right: 2vw;
 #blogImg{
   width: 45%;
   object-fit: contain;
-  padding: 0 3%;
+  padding: 1vh 1vw;
   background-color: #516678;
   height: 100%;
 }
@@ -180,6 +186,10 @@ margin-right: 2vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+#skills{
+  width: 20%;
+  min-width: 120px;
 }
 #skill-image{
   width: 15vw;
@@ -209,12 +219,14 @@ margin-right: 2vw;
   border: 1px solid #888;
   width: 70%; /* Could be more or less, depending on screen size */
   text-align: center;
+  
 }
 
 #modal-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items:center;
+  width: fit-content;
 }
 #modal-header{
 height: 20%;
@@ -241,7 +253,7 @@ height: 20%;
   font-size: 16px;
   margin: 1vh 1vw;
   border: 1px black solid;
-      width: 7vw;
+      min-width: 6vw;
       height: fit-content;
       padding: 12px;
       color: black
@@ -251,7 +263,7 @@ height: 20%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 100%;
 }
 
 .button:hover{
@@ -259,7 +271,7 @@ height: 20%;
 }
 
 #modal-image{
-  width: 50%;
+  width: 75%;
   height: 40%;
   object-fit: contain;
 }
@@ -295,6 +307,7 @@ height: 20%;
  .box {
    height: fit-content;
    width: fit-content;
+   min-width: 45%;
   --b:5px;   /* thickness of the border */
   --c:rgb(0, 0, 0);   /* color of the border */
   --w:20px;  /* width of border */
@@ -315,8 +328,106 @@ height: 20%;
   box-sizing:border-box;
   margin:5px;
   display:inline-flex;
-  font-size:30px;
+  font-size:2em;
   justify-content:center;
   align-items:center;
   line-height:90px;
+}
+@media (min-width: 600px) {
+  #home-intro h2{
+    font-size: 3em;
+    }
+    #home-intro h1{
+      font-size: 6em;
+      color: #516678;
+    }
+    .photo{
+      max-height: 80%;
+      min-width: 50%;
+      object-fit: contain;
+      
+    }
+    #blog-container{
+      min-width: 17vw;
+      height: 20vh;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    #modal-image{
+      width: 50%;
+      height: 40%;
+      object-fit: contain;
+    }
+    #modal-content {
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+    }
+    .portfolioWork{
+      width: 16vw;
+      height: 34vh;
+      border: 1px black solid;
+      padding: 1vw 1vh
+    }
+    #portfolioImage{
+      width: inherit;
+      object-fit: contain;
+      height: 50%
+    }
+    .photo img{
+      max-height: 58vh;
+       object-fit: contain; 
+       border: 1px solid;
+       padding: 10px;
+       box-shadow: 30px 30px #51667891
+    
+    }
+    #skills{
+      width: 15%;
+    }
+    #about-text{
+      width: 70%;
+      }
+      #about-text p{
+        font-size: 1.3em;
+      }
+      #about-me{
+        font-size: 8vw;
+        line-height: 15vh;
+        text-align: left;
+      }
+      .box {
+        height: fit-content;
+        width: fit-content;
+        min-width: 25vw;
+       --b:5px;   /* thickness of the border */
+       --c:rgb(0, 0, 0);   /* color of the border */
+       --w:20px;  /* width of border */
+       
+     
+       border:var(--b) solid transparent; /* space for the border */
+       --g:#0000 90deg,var(--c) 0;
+       background:
+         conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--g)) 0    0,
+         conic-gradient(from 180deg at top    var(--b) right var(--b),var(--g)) 100% 0,
+         conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--g)) 0    100%,
+         conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--g)) 100% 100%;
+       background-size:var(--w) var(--w);
+       background-origin:border-box;
+       background-repeat:no-repeat;
+       
+       /*Irrelevant code*/  
+       box-sizing:border-box;
+       margin:5px;
+       display:inline-flex;
+       font-size:30px;
+       justify-content:center;
+       align-items:center;
+       line-height:90px;
+     }
+     .nav-link{
+      width: 7vw !important;
+    }
 }
