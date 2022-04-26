@@ -4,10 +4,12 @@
   margin: auto;
   background-color: #c2d7d1
   /* display: flex; */
+  width: 100%;
 }
 .overall-container{
 min-height: 74vh;
 height: fit-content;
+width: 100%;
 
 }
 .wrap{
