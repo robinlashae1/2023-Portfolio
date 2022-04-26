@@ -27,11 +27,12 @@ const NavStyles =
 {
     border: "1px black solid",
     display: "inline-block",
-          minWidth: "43px",
-          width: "10%",
-          height: "fit-content",
-          padding: "12px",
-          margin: "-10px 6px 12px",
-          textDecoration:"none",
-          color: "black"
+    minWidth: "43px",
+    width: "10%",
+    height: "fit-content",
+    padding: "12px",
+    margin: "-10px 6px 12px",
+    textDecoration:"none",
+    color: "black",
+    fontSize: ".7em"
 }
