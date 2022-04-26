@@ -188,6 +188,7 @@ margin-right: 2vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 #skills{
   width: 32%;
