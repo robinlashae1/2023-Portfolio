@@ -1,7 +1,7 @@
-import GitHubIcon from '@material-ui/icons/GitHub';
-import DescriptionIcon from '@material-ui/icons/Description';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+// import GitHubIcon from '@material-ui/icons/GitHub';
+// import DescriptionIcon from '@material-ui/icons/Description';
+// import MailOutlineIcon from '@material-ui/icons/MailOutline';
+// import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function BottomBar() {
     return ( 
@@ -14,10 +14,10 @@ function BottomBar() {
                 <h3 style={{margin: "0 0 .5vh 0"}}> Contact Me</h3>
                 <div style={{display: "flex",justifyContent: "center"}}>
                     <div className='double-icons'>
-                        <a href="https://github.com/robinlashae1" className='single-icons'><GitHubIcon/></a>
+                        {/* <a href="https://github.com/robinlashae1" className='single-icons'><GitHubIcon/></a>
                         <a href="https://dev.to/robinlashae1" className='single-icons'><DescriptionIcon/></a>  
                         <a href="mailto: robinlashae1@gmail.com" className='single-icons'><MailOutlineIcon/></a>
-                        <a href="https://www.linkedin.com/in/robin-vernon/" className='single-icons'><LinkedInIcon/></a>
+                        <a href="https://www.linkedin.com/in/robin-vernon/" className='single-icons'><LinkedInIcon/></a> */}
                     </div>
                 </div>
             </div>
